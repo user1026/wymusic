@@ -1,0 +1,225 @@
+::-webkit-scrollbar  
+{  
+	display: none!important;
+    width: 0px;  
+    height: 0px;  
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.index{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.login {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .user {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+    > span {
+      font: bold 0.3rem/0.6rem "微软雅黑";
+    }
+    button {
+      width: 40%;
+      height: 0.6rem;
+      font: bold 0.3rem/0.6rem "微软雅黑";
+      border: none;
+      color: white;
+      background-color: rgb(24, 144, 192);
+    }
+  }
+  input {
+    width: 80%;
+    height: 0.6rem;
+    font: normal 0.3rem/0.6rem "微软雅黑";
+  }
+}
+.header {
+  width: 100%;
+  height: 2.3rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  .top {
+    width: 100%;
+    display: flex;
+    height: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      width: 50%;
+      display: flex;
+      font: normal 0.4rem/1rem "微软雅黑";
+      color: white;
+      align-items: center;
+      overflow: hidden;
+      img {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        margin-left: 0.3rem;
+      }
+    }
+
+    background-color: rgb(209, 69, 69);
+    button {
+      border-radius: 20px;
+      border: 1px solid white;
+      background-color: white;
+      font: normal 0.3rem/0.4rem "微软雅黑";
+      color: rgb(209, 69, 69);
+      margin-right: 0.3rem;
+    }
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    
+    a {
+      width: 30%;
+      height: 0.6rem;
+      text-align: center;
+      font: normal 0.3rem/0.4rem "微软雅黑";
+    }
+  }
+}
+.select {
+  color: red;
+  border-bottom: 2px solid rgb(209, 69, 69);
+}
+.home{
+    width: 100%;
+     
+    position: relative;
+    top: 2.5rem;
+    .songs{
+        height: 0.6rem;
+        border-left: 3px solid rgb(209, 69, 69);
+        font:normal 0.4rem/0.6rem "微软雅黑"
+    }
+    .songsmain{
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+      
+        .songs2{
+            width: 33%;
+            height: 3.5rem;
+            position: relative;
+           .img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+                .playnum{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: white;
+                }
+           }
+        }
+    }
+   >ul{
+       display: block;
+       height: 15rem;
+       li{
+           width: 100%;
+           height: 1.1rem;
+           margin-top: 0.2rem;
+           background-color: rgba(238, 229, 229, 0.6);
+           .p1{
+               font: normal 0.4rem/0.5rem "微软雅黑";
+           }
+           .p2{
+            font: normal 0.3rem/0.4rem "微软雅黑";
+            color: #999999;
+        }
+       }
+   }
+}
+
+.music{
+  width: 100%;
+  position:relative;
+  top: 2.5rem;
+  .musicimg{
+    width: 100%;
+    height: 3rem;
+    background-color: #AD694F;
+    >p{
+      height: 100%;
+      color: white;
+      font: bold 1rem/3rem "微软雅黑";
+    }
+  }
+  .musicmain{
+    >ul{
+      display: block;
+      height: 15rem;
+      li{
+          width: 100%;
+          height: 1.1rem;
+          display: flex;
+          margin-top: 0.2rem;
+          background-color: rgba(238, 229, 229, 0.6);
+          justify-content: flex-start;
+          .index{
+            height: 100%;
+            width: 10%;
+            font: normal 0.3rem/1.1rem "微软雅黑";
+            text-align: center;
+          }
+          .p1{
+              font: normal 0.4rem/0.5rem "微软雅黑";
+          }
+          .p2{
+           font: normal 0.3rem/0.4rem "微软雅黑";
+           color: #999999;
+       }
+      }
+  }
+  }
+}
+.search{
+  width: 100%;
+  position: relative;
+  top:2.5rem;
+  .searchinput{
+    width: 100%;
+    >input{
+      width: 80%;
+      height: 0.6rem;
+      padding: 0 0.5rem;
+      
+      border: none;
+      border-radius: 50px;
+      margin-left:14px;
+    }
+  }
+  
+}
